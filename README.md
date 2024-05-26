@@ -29,14 +29,20 @@ Para iniciar los contenedores de Kafka y Zookeeper, ejecuta el siguiente comando
 docker-compose <nombre_archivo_yml> up
 </pre>
 
-<pre lang="bash">
+Creamo los topicos que necesitarmenmos para llevar a cabo nuestro proyecto
+<pre lang="cmd">
 kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic openweather && \
 kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic exchangerate
 </pre>
 
-<pre lang="bash">
+Verificamos que nuestros topicos se generaran sin problema y se agregaron a kafka-topics
+<pre lang="cmd">
 kafka-topics --list --bootstrap-server localhost:9092
 </pre>
+
+Una vez hecho esto, procedemos a establecer la conexion con nuestra base de datos y podemos ejecutar nuestor codigo de "producer.py" y de manera casi inmediata podemos proceder a ejecurtar nuestro codigo "consumer.py"
+
+
 
 
 
