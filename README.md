@@ -1,12 +1,12 @@
 # final-kafka-zookeeper
 Desarrollar un sistema Pipeline mediante Apache Kafka
 
-*1.34 Proyecto Final*
+# 1.34 Proyecto Final
 
-*Objetivo*
+**Objetivo**
 Desarrollar un sistema Pipeline mediante Apache Kafka
 
-*Actividad*
+**Actividad**
 Construir un Data Pipeline con las siguientes características:
 
 - Utilizar al menos dos API’s (Airlabs, Nasa, Openweather, etc.)
@@ -20,12 +20,26 @@ Construir un Data Pipeline con las siguientes características:
 *Diagrama de implementación*
 ![[Diagrama de implementación]](https://github.com/Haziel01/final-kafka-zookeeper/blob/main/kafka.png?raw=true)
 
-Iniciamos nuestra imagen y contenedores de Kafka y Zookeeper
-`docker-compose <nombre_archivo_yml> up`
+# Instrucciones para Iniciar Kafka y Zookeeper
 
-Iniciamos a crear los topicos necesarios para nuestro proyecto
-`kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic openweather && \
-kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic exchangerate`
+## Paso 1: Iniciar la imagen y contenedores de Kafka y Zookeeper
 
-Verificamos que llos topicos se agregaron correctamente a nuestro kafka
-`kafka-topics --list --bootstrap-server localhost:9092`
+Para iniciar los contenedores de Kafka y Zookeeper, ejecuta el siguiente comando:
+<pre lang="bash">
+docker-compose <nombre_archivo_yml> up
+</pre>
+
+<pre lang="bash">
+kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic openweather && \
+kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic exchangerate
+</pre>
+
+<pre lang="bash">
+kafka-topics --list --bootstrap-server localhost:9092
+</pre>
+
+
+
+
+
+
