@@ -40,7 +40,7 @@ Verificamos que nuestros topicos se generaran sin problema y se agregaron a kafk
 kafka-topics --list --bootstrap-server localhost:9092
 </pre>
 
-Una vez hecho esto, procedemos a establecer la conexion con nuestra base de datos y podemos ejecutar nuestor codigo de "producer.py" y de manera casi inmediata podemos proceder a ejecurtar nuestro codigo "consumer.py"
+Una vez hecho esto, procedemos a establecer la conexion con nuestra base de datos y podemos ejecutar nuestor codigo de `producer.py` y de manera casi inmediata podemos proceder a ejecurtar nuestro codigo `consumer.py`
 
 
 
