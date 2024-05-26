@@ -21,14 +21,11 @@ Construir un Data Pipeline con las siguientes características:
 ![[Diagrama de implementación]](https://github.com/Haziel01/final-kafka-zookeeper/blob/main/kafka.png?raw=true)
 
 Iniciamos nuestra imagen y contenedores de Kafka y Zookeeper
-```CMD
-docker-compose <nombre_archivo_yml> up
+`docker-compose <nombre_archivo_yml> up`
 
 Iniciamos a crear los topicos necesarios para nuestro proyecto
-```bash
-kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic openweather && \
-kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic exchangerate
+`kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic openweather && \
+kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic exchangerate`
 
 Verificamos que llos topicos se agregaron correctamente a nuestro kafka
-```bash
-kafka-topics --list --bootstrap-server localhost:9092
+`kafka-topics --list --bootstrap-server localhost:9092`
