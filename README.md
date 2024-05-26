@@ -15,3 +15,6 @@ Crear en Python un consumidor que tome los datos del topic de Apache Kafka
 Almacenar los datos en MongoDB
 Tomar los datos de MongoDB y graficar los resultados
 De los datos que ofrecen los APIs seleccione la información a procesar y gráficar
+
+*Diagrama de implementación*
+![[Diagrama de implementación]]([https://github.com/Haziel01/final-kafka-zookeeper/blob/main/kafka.png?raw=true])
