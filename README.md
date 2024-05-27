@@ -25,7 +25,7 @@ Construir un Data Pipeline con las siguientes características:
 ## Iniciar la imagen y contenedores de Kafka y Zookeeper
 Para iniciar los contenedores de Kafka y Zookeeper, ejecuta el siguiente comando en la ruta de nuestro proyecto para ejecutar el archivo [docker-compose.yml](https://github.com/Haziel01/final-kafka-zookeeper/blob/eb19fc2cbf05261dd2509d75400fde95a81a0774/docker-compose.yml):
 <pre lang="bash">
-docker-compose <nombre_archivo_yml> up -d
+docker-compose 'nombre_archivo_yml' up -d
 </pre>
 
 ## Creamo los topicos que necesitarmenmos para llevar a cabo nuestro proyecto
